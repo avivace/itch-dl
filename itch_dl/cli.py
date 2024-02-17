@@ -30,6 +30,8 @@ def parse_args() -> argparse.Namespace:
                         help="try to fetch assets on game sites")
     parser.add_argument("--verbose", action="store_true",
                         help="print verbose logs")
+    parser.add_argument("--hh", action="store_true",
+                        help="export games as homebrew hub entries")
     return parser.parse_args()
 
 
